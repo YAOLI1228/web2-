@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <style>
+            #box{
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+            }
+            html,body{
+                height: 100px;
+            }
+    	</style>
+    </head>
+    <body>
+        <div id='box'></div>
+<!--    	<div id='time'></div>-->
+		<script type="text/javascript">
+            var box=document.getElementById('box');
+            var maxTop=document.body.clientHeight-100;
+            var speedY=2;
+            var speedX=3;
+            var curLeft=parseInt(getStyle(box,'left');
+            var curTop=parseInt(getStyle(box,'top');
+            console.log(getStyle(box,'left'));
+            setInterval(function(){           
+                if(curTop>maxTop||curTop<0){
+                    speedY=-speedY;
+                }
+                if(curLeft>maxLeft||curLeft<0){
+                    speedX=-speedX;
+                }
+                box.style.left=curLeft+speedX+"px";
+                box.style.top=curTop+speedY+"px";
+            },50)
+            function getStyle(obj,attr){
+                if(obj.currentStyle){
+                    return obj.currentStyle[attr];
+                }else{
+                    return getComputedStyle(obj)[attr];
+                }
+            }
+		  // var time=document.getElementById('time');
+    //       function add0(n){
+    //             return n<10?'0'+n:n;
+    //       }
+    //       setInterval(function(){
+    //         var d=new Date();
+    //         var h=d.getHours();
+    //         var m=d.getMinutes();
+    //         var s=d.getSeconds();
+    //         time.innerHTML=add0(h)+'--'+add0(m)+'--'+add0(s);
+    //       },1000)
+          //年月日不带复数，星期day也不带复数，时分秒都带复数即s。
+          
+		</script>
+    </body>
+</html>   -->
